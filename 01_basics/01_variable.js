@@ -12,3 +12,11 @@ acc_city = "j&k"
 
 console.log(acc_id);
 console.table([acc_id , acc_email , acc_pass , acc_city , acc_state])
+
+
+/* 
+
+prefer to use let not var 
+because of the issue in block and functional scope 
+
+*/
