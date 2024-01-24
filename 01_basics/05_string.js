@@ -26,7 +26,7 @@ const newStringOne = "    anuj    ";
 console.log(newStringOne);
 console.log(newStringOne.trim());   
 
-const url "https://anuj.com/anuj%20singh";
+const url = " ttps://anuj.com/anuj%20singh";
 console.log(url.replace('%20' , '-'));       // replaces letters in string 
 console.log(url.include("anuj"));   //if found yes op is true // if not found op is false 
 
