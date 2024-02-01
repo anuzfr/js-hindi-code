@@ -48,3 +48,27 @@ if (isUserLoggedIn && debitCard) {
 if (loginFrom_email || loginFrom_gmail){
     console.log('user logged in ')
 }
+
+//-----------------------------------------------------------------
+
+// nullish coalescing operator (??) : null or undefined 
+
+// return first value when start if there is null or undefined go to next value 
+let val1;
+
+val1 = 5 ?? 10      // op is 5
+val1 = null ?? 10      // op is 10 
+val1 = null ?? undefined     // op is undefined
+val1 = undefined ?? 5      //op is 5
+val1 = 1 ?? undefined   // op is 1
+val1 = 1 ?? null        // op is 1
+val1 = undefined ?? 10 ?? 10      // op is 1st 10
+
+//console.log(val1)
+
+//------------------------------
+//terniary operator
+// condition ? true : false 
+
+const icetea = 100
+icetea <= 80 ? console.log('less than 80 ') : console.log('more than 80')
