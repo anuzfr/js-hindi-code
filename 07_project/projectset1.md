@@ -518,7 +518,7 @@ html {
   
 ```
 
-## project 5 
+## project 5 (async js)
 ### html
 ``` html
 <!DOCTYPE html>
@@ -573,7 +573,7 @@ const randomColor = function () {
   document.querySelector('#stop').addEventListener('click', stopChangingColor);
 ```
 
-## project 6
+## project 6 (async js)
 ### html
 ```html
 <!DOCTYPE html>
