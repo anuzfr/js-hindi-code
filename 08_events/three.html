@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #95af79;">
+    <h1>anuj_js</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+       
+        // start button
+        const begin = document.querySelector('#start').addEventListener('click' , function(){
+            const sayDate = function(str){
+            console.log(str,Date.now());
+            }
+            const intervalId = setInterval(sayDate,1000,'hi');
+            })  
+            
+            // start is done
+ 
+        // stop button
+        const end = document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval( )
+            })   
+
+            //stop button is not done
+        
+        // start to start the intervalId
+        // stop to stop the intervalId
+    </script>
+</body>
+</html>
