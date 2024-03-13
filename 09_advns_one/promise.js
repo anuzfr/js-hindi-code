@@ -105,3 +105,6 @@ fetch('https://api.github.com/users/hiteshchoudhary')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+// promise.all
+// yes this is also available , find 
