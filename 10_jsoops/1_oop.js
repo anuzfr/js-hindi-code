@@ -26,6 +26,6 @@ function User(username, loginCount, isLoggedIn){
 }
 
 const userOne = new User("hitesh", 12, true)   // make a new copy or a instance , and it is like new object , userOne = new User 
-const userTwo = new User("ChaiAurCode", 11, false) // uses the argument from the user and stored with new act as new object 
+const userTwo = new User("ChaiAurCode", 11, false) // uses the argument from the user and stored with new act as new object   
 console.log(userOne.constructor);
-console.log(userTwo);
+// console.log(userTwo);
