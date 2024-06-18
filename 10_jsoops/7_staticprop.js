@@ -1,4 +1,4 @@
-class user {
+class User {
     constructer(username){
         this.username = username
     }
@@ -7,20 +7,19 @@ class user {
         console.log(`username: ${this.username}`)
     }
 
-    static createId(){
+    static createId(){                            // allow to not use this function which has static keyword
         return `123`
     }
 }
 
-const anuj = new user('anuj')
-//console.log(anuj.createId())
+const anuj = new User('anuj')
+// console.log(anuj.createId())
 
-const teacher extends user {
-    constructer(username,email){
-        super(username)
+class Teacher extends User {
+    constructor (username,email){
+        super (username)
         this.email = email
     }
 }
-
-const iphone = new teacher('samsung' , 's@amsung')
+const iphone = new Teacher ('samsung' , 's@amsung')
 iphone.logMe()
