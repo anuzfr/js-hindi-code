@@ -16,9 +16,10 @@ class User {
     }
 
     set password(value){
-        this._password = value           // but set as only as given = anuj 
+        this._password = value           // but set as only as given  = anuj 
     }
 }
 
 const anuj = new User("a@anuj.com", "anuj")
 console.log(anuj.email);
+// defining getter (get) and setter (set) through class
