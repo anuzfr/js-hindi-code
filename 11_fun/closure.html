@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lexical scope and closure</title>
+</head>
+<body style="background-color: #414141;">
+    <button id="orange">Orange</button>
+    <button id="white">White</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+
+// lexical scoping  
+
+     function outer(){
+         let username = "anuj"
+         console.log("OUTER", secret);
+         function inner(){
+             let secret = "123"
+             console.log("inner", username);
+         }
+         function innerTwo(){
+             console.log("innerTwo", username);
+             console.log(secret);
+         }
+         inner()
+         innerTwo()
+
+     }
+     outer()
+     console.log("TOO OUTER", username);
+
+</script>
+
+   
+<script>
+
+// closure   : with lexical scoping , difference in using function and only its execution context 
+
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        // if we get 500 colors button ,then it does not obey D.R.Y.(dont repeat yourself)
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById("white").onclick = clickHandler("white")
+        document.getElementById('green').onclick = clickHandler('green')
+
+</script>
+
+</html>
